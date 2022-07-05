@@ -1,0 +1,7 @@
+
+### Recipes Index
+
+GET http://localhost:3000/movies.json
+
+### Recipes Show
+GET http://localhost:3000/movies/3.json
