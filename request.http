@@ -1,7 +1,57 @@
-
-### Recipes Index
+### Movies Index
 
 GET http://localhost:3000/movies.json
 
-### Recipes Show
+### Movies Show
 GET http://localhost:3000/movies/3.json
+
+### Movies Create
+POST http://localhost:3000/movies.json
+Content-Type: application/json
+
+{
+  "title": "A road to code",
+  "year": "2022",
+  "plot": "Sitting here learning to code"
+}
+
+### Movies Update
+PATCH http://localhost:3000/movies/3.json
+Content-Type: application/json
+
+{
+  "year": 150
+}
+
+### Movies Destroy
+DELETE http://localhost:3000/movies/4.json
+
+
+
+### Actors Index
+
+GET http://localhost:3000/actors.json
+
+### Actors Show
+GET http://localhost:3000/actors/3.json
+
+### Actors Create
+POST http://localhost:3000/actors.json
+Content-Type: application/json
+
+{
+  "first_name": "Leo",
+  "last_name": "DiCaprio",
+  "known_for": "Drowning"
+}
+
+### Actors Update
+PATCH http://localhost:3000/actors/3.json
+Content-Type: application/json
+
+{
+  "first_name": 150
+}
+
+### Actors Destroy
+DELETE http://localhost:3000/actors/4.json
