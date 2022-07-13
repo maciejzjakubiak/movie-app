@@ -33,7 +33,7 @@ DELETE http://localhost:3000/movies/4.json
 GET http://localhost:3000/actors.json
 
 ### Actors Show
-GET http://localhost:3000/actors/3.json
+GET http://localhost:3000/actors/4.json
 
 ### Actors Create
 POST http://localhost:3000/actors.json
