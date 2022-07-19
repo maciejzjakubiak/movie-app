@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/faker-ruby/faker.git
+  revision: b98d32dcca8aa482525320d8463dff741af0d84d
+  branch: master
+  specs:
+    faker (2.21.0)
+      i18n (>= 1.8.11, < 2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -46,6 +54,8 @@ GEM
       erubi (~> 1.4)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.1, >= 1.2.0)
+    active_model_serializers (0.9.3)
+      activemodel (>= 3.2)
     activejob (7.0.3)
       activesupport (= 7.0.3)
       globalid (>= 0.3.6)
@@ -66,6 +76,7 @@ GEM
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
       tzinfo (~> 2.0)
+    bcrypt (3.1.18)
     bootsnap (1.12.0)
       msgpack (~> 1.2)
     builder (3.2.4)
@@ -83,6 +94,8 @@ GEM
     io-console (0.5.11)
     irb (1.4.1)
       reline (>= 0.3.0)
+    jb (0.8.0)
+    jwt (2.4.1)
     loofah (2.18.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -160,8 +173,13 @@ PLATFORMS
   arm64-darwin-21
 
 DEPENDENCIES
+  active_model_serializers (= 0.9.3)
+  bcrypt (~> 3.1.7)
   bootsnap
   debug
+  faker!
+  jb
+  jwt
   pg (~> 1.1)
   puma (~> 5.0)
   rails (~> 7.0.3)

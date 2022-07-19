@@ -27,4 +27,10 @@ Rails.application.routes.draw do
 
   # DELETE "/movies/3" - Deletes a specific book
   delete "/movies/:id" => "movies#destroy"
+
+  # POST "/users" - Creates a new user, add it to our database
+  post "/users" => "users#create"
+
+  # POST "/sessions" - Creates a new session, add it to our database
+  post "/sessions" => "sessions#create"
 end
