@@ -66,3 +66,12 @@ Content-Type: application/json
   "password": "password",
   "password_confirmation": "password"
 }
+
+### Movie_Genre Create
+POST http://localhost:3000/movie_genres.json
+Content-Type: application/json
+
+{
+  "movie_id": "1",
+  "genre_id": "4"
+}

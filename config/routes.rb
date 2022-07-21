@@ -33,4 +33,7 @@ Rails.application.routes.draw do
 
   # POST "/sessions" - Creates a new session, add it to our database
   post "/sessions" => "sessions#create"
+
+  # POST "/Movie_genre" - Creates a new movie_genre, add it to our database
+  post "/movie_genres" => "movie_genres#create"
 end
